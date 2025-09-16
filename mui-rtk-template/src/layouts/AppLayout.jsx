@@ -19,6 +19,7 @@ import Container from '@mui/material/Container'
 import Divider from '@mui/material/Divider'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme } from '@mui/material/styles'
+import GlobalLoading from '../components/GlobalLoading.jsx'
 
 const drawerWidth = 240
 
@@ -68,6 +69,7 @@ export default function AppLayout() {
 
   return (
     <Box sx={{ display: 'flex', minHeight: '100vh' }}>
+      <GlobalLoading />
       <AppBar position="fixed" sx={{ zIndex: (t) => t.zIndex.drawer + 1 }}>
         <Toolbar>
           {!isSmUp && (

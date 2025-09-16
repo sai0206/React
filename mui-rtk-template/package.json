@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --open",
+    "start": "vite preview --port 4173"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
